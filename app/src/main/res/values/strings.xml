@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nombre Premier</string>
+    <string name="home_page_title">Calculateur de nombre premier</string>
+    <string name="home_page_btn_start_calcul">Calculer</string>
+    <string name="home_page_input_number">Entrez un grand nombre</string>
+    <string name="home_page_text_count">Nombre de nombre premier trouver</string>
+
+</resources>
