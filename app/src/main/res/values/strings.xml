@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Nombre Premier</string>
-    <string name="home_page_title">Calculateur de nombre premier</string>
+    <string name="home_page_title">Calculateur de nombre premier en utilisant AsyncTask</string>
+    <string name="child_page_title">Calculateur de nombre premier en utilisant java.util.concurrent</string>
     <string name="home_page_btn_start_calcul">Calculer</string>
     <string name="home_page_input_number">Entrez un grand nombre</string>
     <string name="home_page_text_count">Nombre de nombre premier trouver</string>
-
+    <string name="home_page_change_view">Utiliser  java.util.concurrent</string>
+    <string name="child_page_change_view">Utiliser  async task </string>
 </resources>
