@@ -24,13 +24,15 @@ public class MainActivity extends AppCompatActivity {
     private ArrayAdapter<Integer> primeNumbersAdapter;
     private TextView countPrimeNumber;
 
+    private ListView primeNumbersListView;
+
     private Integer primeNumberFind = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView primeNumbersListView = findViewById(R.id.home_page_list_text_view);
+        primeNumbersListView = findViewById(R.id.home_page_list_text_view);
         Button startCalculationButton = findViewById(R.id.home_page_btn_calc);
         countPrimeNumber = findViewById(R.id.home_page_text_view_count_result);
         initialValue = findViewById(R.id.home_page_edit_text);
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private class CalculatePrimesTask extends AsyncTask<Long, Long, List<Long>> {
-
+        private  int test=0;
         @Override
         protected void onPreExecute() {
             // Vous pouvez effectuer des initialisations ici avant le début de la tâche
@@ -95,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onProgressUpdate(Long... values) {
             // Mettez à jour l'interface utilisateur avec le nouveau nombre premier
             primeNumbersAdapter.add(Integer.parseInt(values[0].toString()));
+            primeNumbersListView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 
         }
 

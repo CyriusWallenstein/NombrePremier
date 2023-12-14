@@ -83,6 +83,8 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="25dp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
